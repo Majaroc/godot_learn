@@ -1,3 +1,4 @@
-- changer de scene
-- com entre obj
-- UI/VFX
+[ ] changer de scene
+[ ] com entre obj
+[ ] UI/VFX
+[ ] destruction d'object
