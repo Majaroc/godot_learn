@@ -1,0 +1,85 @@
+[gd_scene load_steps=11 format=3 uid="uid://b1hgejoxy8ng2"]
+
+[ext_resource type="Script" path="res://Scene/player.gd" id="1_8p5i3"]
+[ext_resource type="Texture2D" uid="uid://cg3e762dcnn6o" path="res://art/playerGrey_up1.png" id="1_nexf2"]
+[ext_resource type="Texture2D" uid="uid://hmfjt1t0r2cn" path="res://art/playerGrey_up2.png" id="2_budxl"]
+[ext_resource type="Texture2D" uid="uid://cs872hi2ke7x0" path="res://art/playerGrey_walk1.png" id="3_f1ymd"]
+[ext_resource type="Texture2D" uid="uid://kgilunkyfsrk" path="res://art/playerGrey_walk2.png" id="4_mvxv0"]
+[ext_resource type="Script" path="res://Scene/AnimatedSprite2D-1.gd" id="5_no75c"]
+[ext_resource type="Script" path="res://Scene/AnimatedSprite2D-2.gd" id="6_e3b6g"]
+[ext_resource type="Script" path="res://Scene/AnimatedSprite2D-3.gd" id="7_yb2mr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbhet"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nexf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_budxl")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_f1ymd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mvxv0")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yr323"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nexf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_budxl")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_f1ymd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mvxv0")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D"]
+position = Vector2(300, 324)
+scale = Vector2(5, 5)
+script = ExtResource("1_8p5i3")
+
+[node name="AnimatedSprite2D-1" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_kbhet")
+animation = &"walk"
+script = ExtResource("5_no75c")
+
+[node name="AnimatedSprite2D-2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(50, 0)
+sprite_frames = SubResource("SpriteFrames_yr323")
+animation = &"walk"
+script = ExtResource("6_e3b6g")
+
+[node name="AnimatedSprite2D-3" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(100, 0)
+sprite_frames = SubResource("SpriteFrames_yr323")
+animation = &"walk"
+script = ExtResource("7_yb2mr")
