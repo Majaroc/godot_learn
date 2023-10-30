@@ -1,4 +1,15 @@
-[ ] changer de scene
-[ ] com entre obj
-[ ] UI/VFX
 [ ] destruction d'object
+[ ] changer de scene
+[ ] communication entre objs
+[ ] UI
+[ ] VFX
+[ ] instancier des choses identiques (ennemis, collectible, etc...)
+[ ] physics
+	- https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html#doc-physics-introduction
+[ ] sauvegarder des donnees entre 2 demarrages
+[ ] parametrization des scripts (l'equivalent de `public` ou `[SerializedField]` dans unity)
+[ ] evenements souris sur un object (3D?) pour click + drag + drop
+
+Advanced
+[ ] connection Serial (Arduino)
+[ ] connection WebSocket (webpage, webserver, et lidars de la salle prise de vue)
