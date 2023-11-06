@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://cji1nksry5viv"]
 
-[ext_resource type="Script" path="res://Scene/hud_learn.gd" id="1_8j3l6"]
+[ext_resource type="Script" path="res://Script/hud_learn.gd" id="1_nq6d0"]
 
 [node name="HUD_learn" type="CanvasLayer"]
-script = ExtResource("1_8j3l6")
+script = ExtResource("1_nq6d0")
 
 [node name="Titre" type="Label" parent="."]
 anchors_preset = 5

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c4bp468gphmnk"]
 
-[ext_resource type="Script" path="res://Scene/Sprite.gd" id="1_uoi1m"]
+[ext_resource type="Script" path="res://Script/Sprite.gd" id="1_3lmhs"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_kkjwj"]
 
@@ -10,4 +10,4 @@
 position = Vector2(576, 324)
 scale = Vector2(100, 100)
 texture = SubResource("CanvasTexture_kkjwj")
-script = ExtResource("1_uoi1m")
+script = ExtResource("1_3lmhs")

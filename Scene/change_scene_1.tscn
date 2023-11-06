@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4pxj303ncvvl"]
+
+[ext_resource type="Script" path="res://Script/change_scene_1.gd" id="1_nd16i"]
+
+[node name="Change-scene_1" type="CanvasLayer"]
+script = ExtResource("1_nd16i")
+
+[node name="Titre" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -33.5
+offset_right = 33.5
+offset_bottom = 26.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "SCENE  1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonChange" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -26.5
+offset_right = 62.0
+offset_bottom = 26.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Scene 2"
+
+[connection signal="pressed" from="ButtonChange" to="." method="_on_button_change_pressed"]
